@@ -27,7 +27,7 @@ jobs:
     - name: Run a one-line script
       run: |
         mkdir wheels
-        echo qwe > wheels/asd
+        docker run --rm --isolation=process -v wheels:c:\out kratosmultiphysics/kratos-wheelbuilder-windows -branch wheels/add-action -pythons "38" -cotire ON -cpus 1
     - name: Upload Artifacts
       uses: actions/upload-artifact@v2
       with:
