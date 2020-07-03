@@ -26,7 +26,7 @@ jobs:
     - name: Run a one-line script
       run: |
         mkdir ${GITHUB_WORKSPACE}/wheels
-        echo qwe > wheels/asd
+        echo qwe > ${GITHUB_WORKSPACE}/wheels/asd
     - name: Upload a Build Artifact
       uses: actions/upload-artifact@v2
       with:
