@@ -26,6 +26,9 @@ jobs:
       run: |
          mkdir wheels
          pwd
-         docker run --rm -v wheels:c:\out hubertus248/volumetest
+         docker run --rm -v D:\a\Kratos\Kratos\wheels:c:\out hubertus248/volumetest
          ls
+         echo ---
          ls wheels
+         echo -----
+         ls D:\a\Kratos\Kratos\wheels
