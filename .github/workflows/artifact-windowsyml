@@ -28,6 +28,9 @@ jobs:
       run: |
         mkdir wheels
         docker run --rm --isolation=process -v wheels:c:\out kratosmultiphysics/kratos-wheelbuilder-windows -branch wheels/add-action -pythons "38" -cotire ON -cpus 1
+        ls
+        ls wheels
+        pwd
     - name: Upload Artifacts
       uses: actions/upload-artifact@v2
       with:
