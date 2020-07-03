@@ -26,9 +26,9 @@ jobs:
       run: |
          mkdir wheels
          echo ------------
-         echo $GITHUB_WORKSPACE
+         echo $env:GITHUB_WORKSPACE
          echo ------------
-         docker run --rm -v $github_workspace\wheels:c:\out hubertus248/volumetest
+         docker run --rm -v $env:github_workspace\wheels:c:\out hubertus248/volumetest
          ls
          echo ---
          ls wheels
