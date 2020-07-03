@@ -25,7 +25,7 @@ jobs:
     # Runs a single command using the runners shell
     - name: Run a one-line script
       run: |
-        mkdir wheels
+        mkdir ${GITHUB_WORKSPACE}/wheels
         echo qwe > wheels/asd
     - name: Upload a Build Artifact
       uses: actions/upload-artifact@v2
