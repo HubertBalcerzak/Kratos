@@ -26,7 +26,10 @@ jobs:
     - name: Run a one-line script
       run: |
         mkdir wheels
-        echo qwe > wheels/asd
+        sudo docker run --rm -v wheels:/workspace/out hubertus248/kratoswheelbuilder-linux --branch "wheels/add-action" --cpus 2 --pythons 38 --cotire ON --repository "https://github.com/KratosMultiphysics/Kratos.git"
+        pwd
+        ls
+        ls wheels
     - name: Upload Artifacts
       uses: actions/upload-artifact@v2
       with:
