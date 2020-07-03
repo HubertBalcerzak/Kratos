@@ -25,8 +25,9 @@ jobs:
     - name: Run a multi-line script
       run: |
          mkdir wheels
-         pwd
+         echo ------------
          echo $GITHUB_WORKSPACE
+         echo ------------
          docker run --rm -v $github_workspace\wheels:c:\out hubertus248/volumetest
          ls
          echo ---
