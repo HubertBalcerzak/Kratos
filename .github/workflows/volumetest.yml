@@ -33,7 +33,6 @@ jobs:
          echo -----
          ls D:\a\Kratos\Kratos\wheels
          
-         - name: Upload Artifacts
     - name: Upload Artifacts
       uses: actions/upload-artifact@v2
       with:
